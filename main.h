@@ -18,12 +18,12 @@ struct opt
 };
 typedef struct opt _opt;
 
+int _controlpf(const char *format, _opt f1[], va_list ls);
 int _printf(const char *format, ...);
+int _xchar(char c);
 int _pchar(va_list ls);
 int _pstring(va_list ls);
 int _pinteger(va_list ls);
 int _ppercent(va_list ls);
-int _controlpf(const char *format, _opt fl[], va_list ls);
-int _xchar(char c);
 
 #endif
