@@ -31,7 +31,7 @@ int _pstring(va_list ls)
  * @ls: list of arguments
  * Return: number of characters printed
  */
-int _ppercent(va_list ls)
+int _ppercent(__attribute__((unused))va_list ls)
 {
 	_xchar('%');
 	return (1);
