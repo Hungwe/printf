@@ -17,6 +17,9 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 
+	if (format == NULL)
+		return(-1);
+
 	va_start(al, format);
 	x = _controlpf(format, fl, al);
 	va_end(al);
