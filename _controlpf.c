@@ -8,9 +8,9 @@
  */
 int _controlpf(const char *format, _opt fl[], va_list ls)
 {
-	int i, j, n, x;
+	int i, j, n, x = 0;
 
-	for (i = 0, x = 0; format[i] != '\0'; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
