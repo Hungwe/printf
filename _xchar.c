@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putchar - same function as putchar
+ * _xchar - same function as putchar
  * @c: character to be output
  * Return: result
  */
