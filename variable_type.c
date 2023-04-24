@@ -33,7 +33,9 @@ int _pstring(va_list ls)
  */
 int _pinteger(va_list ls)
 {
-	int n, nm, x = 1, ln = 0;
+	int n, x = 1, ln = 0;
+	unsigned int nm;
+
 	n = va_arg(ls, int);
 	if (n < 0)
 	{
