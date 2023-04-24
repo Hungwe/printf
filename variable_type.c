@@ -19,8 +19,10 @@ int _pstring(va_list ls)
 {
 	int i;
 	char *str;
-	
+
 	str = va_arg(ls, char *);
+	if (str == NULL)
+		str = "(null)";
 	for (i = 0; str[i] != '\0'; i++)
 		_xchar(str[i]);
 	return (i);
