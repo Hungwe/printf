@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 	_opt fl[] = {
 		{"c", _pchar},
 		{"s", _pstring},
-		{"i", _pinteger},
 		{"%", _ppercent},
 		{NULL, NULL}
 	};

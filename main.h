@@ -22,7 +22,6 @@ int _printf(const char *format, ...);
 int _xchar(char c);
 int _pchar(va_list ls);
 int _pstring(va_list ls);
-int _pinteger(va_list ls);
 int _ppercent(va_list ls);
 
 #endif
