@@ -23,5 +23,7 @@ int _xchar(char c);
 int _pchar(va_list ls);
 int _pstring(va_list ls);
 int _ppercent(va_list ls);
-
+int _pdeci(va_list ls);
+int _pint(va_list ls);
+void recur(int num);
 #endif
