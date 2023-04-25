@@ -20,27 +20,3 @@ num = va_arg(ls, int);
 recur(num);
 return (1);
 }
-
-/**
- * recur - Recursive function
- * @num: Input number
- *
- */
-
-void recur(int num)
-{
-if (num < 0)
-{
-_xchar('-');
-num = num * -1;
-}
-if (num == 0)
-{
-_xchar('0');
-}
-else if (num / 10)
-{
-recur(num / 10);
-}
-_xchar(num % 10 + '0');
-}
