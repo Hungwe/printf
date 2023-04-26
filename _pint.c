@@ -15,14 +15,14 @@
 
 int _pint(va_list ls)
 {
-int n;
+long int n;
 unsigned int nm;
 int x;
 int ln;
 
 x = 1;
 ln = 0;
-n = va_arg(ls, int);
+n = va_arg(ls, long int);
 if (n == 0)
 	ln = ln + _xchar('0' + 0);
 if (n < 0)
