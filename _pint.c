@@ -32,11 +32,11 @@ else
 {
 nm = n;
 }
-while (nm / x > 9)
+for (;nm / x > 9; )
 {
 x = x * 10;
 }
-while (nm != 0)
+for (; nm != 0; )
 {
 ln = ln + _xchar('0' + nm / x);
 nm = nm % x;
@@ -44,3 +44,4 @@ x = x / 10;
 }
 return (ln);
 }
+
