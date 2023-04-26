@@ -39,7 +39,7 @@ x = x * 10;
 while (nm != 0)
 {
 ln = ln + _xchar('0' + nm / x);
-nm % x;
+nm = nm % x;
 x = x / 10;
 }
 return (ln);
