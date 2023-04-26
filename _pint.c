@@ -23,6 +23,8 @@ int ln;
 x = 1;
 ln = 0;
 n = va_arg(ls, int);
+if (n == 0)
+	ln = ln + _xchar('0' + 0);
 if (n < 0)
 {
 ln = ln + _xchar('-');
@@ -32,11 +34,11 @@ else
 {
 nm = n;
 }
-for (;nm / x > 9; )
+while (nm / x > 9)
 {
 x = x * 10;
 }
-for (; nm != 0; )
+while (nm != 0)
 {
 ln = ln + _xchar('0' + nm / x);
 nm = nm % x;
@@ -44,4 +46,3 @@ x = x / 10;
 }
 return (ln);
 }
-
