@@ -32,7 +32,7 @@ else
 {
 nm = n;
 }
-for (;nm / x > 9; )
+for (; nm / x > 9; )
 {
 x = x * 10;
 }
