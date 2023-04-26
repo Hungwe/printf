@@ -16,7 +16,7 @@
 int _pint(va_list ls)
 {
 int n;
-int nm;
+unsigned int nm;
 int x;
 int ln;
 
